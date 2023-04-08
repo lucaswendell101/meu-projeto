@@ -1,0 +1,56 @@
+body{ 
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0; /* por padrão o margin do body é 8, porém podemos zerar por padrão*/
+}
+
+p, a{ /*utilizando vários seletores para a mesma caracteristica*/
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+#hero {
+  width: 592px;
+  margin: 0 auto 72px; /* o primeiro 0 para o top, direta/esquerta estão auto, bottom está 72*/
+}
+#hero img{
+  margin-bottom: 72px;
+}
+h1 {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+
+  margin-bottom: 32px;
+}
+h1 span {
+  font-weight: bold;
+}
+
+span, a{
+  color: #FF9900;
+}
+p, #footer{
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+
+#footer a + a{ /*ele pegou um a, que anterior a ele tinha outro a e aplique 28pc a esquerda*/
+  margin-left: 29px;
+}
+
+.line{ /*como chamar uma classe*/
+  width: 568px;
+  height: 0px;
+  border: 1px solid #ECEFF2;
+  margin: 0 auto 8px;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
